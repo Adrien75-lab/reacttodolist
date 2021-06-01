@@ -47,6 +47,14 @@ class App extends React.Component {
       localStorage.setItem('data',JSON.stringify(this.state.tasks))
     },500)
   }
+    shouldComponentUpdate = () => {
+      
+      return true
+
+  }
+  componentDidUpdate = () => {
+    return true
+  }
   
   
   render() {
